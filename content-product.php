@@ -40,8 +40,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                     <p class="section-item-information">
                       <?= $product->get_description()?>
                     </p>
-					<p class="section-item-price"><?=$product->get_price_html() ?></p>
+					
 					<div class="cart-div">
+						<p class="section-item-price"><?=$product->get_price_html() ?></p>
 						<!-- <div><input type="button" value="-"/><span class="cart-quantity"></span><input type="button" value="+"/></div> -->
                     <?php woocommerce_template_loop_add_to_cart();?>
 					</div>
