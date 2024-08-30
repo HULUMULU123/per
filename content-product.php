@@ -36,10 +36,12 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         ?>
                   </div>
                   <div class="section-text">
+		    <div class="cart-div-desc">
                     <h3 class="card-heading"><?= esc_html( $product->get_name() )?></h3>
                     <p class="section-item-information">
                       <?= $product->get_description()?>
                     </p>
+		   </div>
 					
 					<div class="cart-div">
 						<p class="section-item-price"><?=$product->get_price_html() ?></p>
